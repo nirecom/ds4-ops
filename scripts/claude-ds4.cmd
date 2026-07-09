@@ -41,7 +41,9 @@ set ANTHROPIC_CUSTOM_MODEL_OPTION=deepseek-v4-flash
 set ANTHROPIC_CUSTOM_MODEL_OPTION_NAME=DeepSeek V4 Flash local ds4
 set ANTHROPIC_CUSTOM_MODEL_OPTION_DESCRIPTION=ds4.c local GGUF
 set ANTHROPIC_DEFAULT_SONNET_MODEL=deepseek-v4-flash
-set ANTHROPIC_DEFAULT_HAIKU_MODEL=deepseek-v4-flash
+rem Haiku is the lightweight/mechanical tier (titles, quick background tasks); map it to the
+rem non-thinking alias so it stays fast and cheap. Thinking-control model names: docs/tuning.md.
+set ANTHROPIC_DEFAULT_HAIKU_MODEL=deepseek-chat
 set ANTHROPIC_DEFAULT_OPUS_MODEL=deepseek-v4-flash
 set CLAUDE_CODE_SUBAGENT_MODEL=deepseek-v4-flash
 

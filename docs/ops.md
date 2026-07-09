@@ -35,7 +35,8 @@ Then launch VS Code with the ds4 backend via the bundled wrapper:
 scripts\claude-ds4.cmd .
 ```
 The wrapper loads `.env`, then sets the ds4 env (`ANTHROPIC_BASE_URL`, `ANTHROPIC_AUTH_TOKEN`,
-the `deepseek-v4-flash` model aliases, and `CLAUDE_CODE_AUTO_COMPACT_WINDOW=393216` /
+the `deepseek-v4-flash` model aliases (the haiku tier uses the non-thinking `deepseek-chat`),
+and `CLAUDE_CODE_AUTO_COMPACT_WINDOW=393216` /
 `CLAUDE_AUTOCOMPACT_PCT_OVERRIDE=75`), then launches VS Code. If `DS4_ANTHROPIC_BASE_URL` is set
 in neither `.env` nor the shell, the wrapper warns and falls back to `localhost` (a placeholder
 that will not reach the Mac). A value set in the shell takes precedence over `.env`. `DS4_API_KEY`
